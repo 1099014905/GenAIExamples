@@ -56,7 +56,8 @@ class TranslationService:
         source_language = data["source_language"]
         prompt_template = """
             Translate this from {language_from} to {language_to}:
-
+            Preserve all line breaks in the original text.
+            
             {language_from}:
             {source_language}
 
